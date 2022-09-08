@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "codemirror/lib/codemirror.css";
 import "codemirror/theme/material.css";
+import "codemirror/theme/monokai.css";
+import "codemirror/theme/erlang-dark.css";
+import "codemirror/theme/dracula.css";
 import "codemirror/mode/xml/xml";
 import "codemirror/mode/javascript/javascript";
 import "codemirror/mode/css/css";
@@ -38,7 +41,7 @@ const Editor = ({ displayName, language, value, onChange }) => {
           lint: true,
           mode: language,
           lineNumbers: true,
-          theme: "material",
+          theme: "dracula",
         }}
       />
     </div>
